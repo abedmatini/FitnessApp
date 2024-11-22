@@ -30,8 +30,11 @@ export default function FitnessWorld() {
 
 
       {/* Featured Training Types Section */}
-      <View>
-        <Text>Featured Training Types</Text>
+      <View style={styles.section}>
+        <Text style={styles.header}>Featured Training Typesss</Text>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          
+        </ScrollView>
       </View>
 
       {/*Popular Workout Plans Section */}
