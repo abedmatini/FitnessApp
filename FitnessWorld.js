@@ -31,10 +31,22 @@ export default function FitnessWorld() {
 
       {/* Featured Training Types Section */}
       <View style={styles.section}>
-        <Text style={styles.header}>Featured Training Typesss</Text>
+        <Text style={styles.header}>Featured Training Types</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          
+          <View style={styles.trainingTypeCard}>
+            <Image source={{ uri: 'https://images.unsplash.com/photo-1589579234096-25cb6b83e021?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.trainingImage} />
+            <Text style={styles.trainingTitle}>Strength Training</Text>
+          </View>
+          <View style={styles.trainingTypeCard}>
+            <Image source={{ uri: 'https://images.unsplash.com/photo-1689876593463-6678f2e8d4f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.trainingImage} />
+            <Text style={styles.trainingTitle}>Cardio</Text>
+          </View>
+          <View style={styles.trainingTypeCard}>
+            <Image source={{ uri: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }} style={styles.trainingImage} />
+            <Text style={styles.trainingTitle}>Yoga</Text>
+          </View>
         </ScrollView>
+
       </View>
 
       {/*Popular Workout Plans Section */}
@@ -77,6 +89,22 @@ const styles = StyleSheet.create({
   },
   workoutDescp: {
     textAlign: 'center',
+  },
+  trainingTypeCard: {
+    marginRight: 20,
+    width: 150,
+    alignItems: 'center',
+  },
+  trainingImage: {
+    width: '150',
+    height: '150',
+    borderRadius: 75,
+  },
+  trainingTitle: {
+    marginTop: 10,
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#4caf50',
   },
     
 })
